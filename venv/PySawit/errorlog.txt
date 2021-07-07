@@ -1,0 +1,20 @@
+Traceback (most recent call last):
+  File "C:\Users\Jirawat D\PycharmProjects\yield_estimation\venv\PySawit\pysawit.py", line 342, in main
+    fac = Facade(args.i, args.o)
+  File "C:\Users\Jirawat D\PycharmProjects\yield_estimation\venv\PySawit\facade.py", line 97, in __init__
+    self.model = EnergyBal(fname_in)    # the engine: oil palm model object
+  File "C:\Users\Jirawat D\PycharmProjects\yield_estimation\venv\PySawit\energybal.py", line 137, in __init__
+    Photosyn.__init__(self, fname_in)   # initialize the parent class first
+  File "C:\Users\Jirawat D\PycharmProjects\yield_estimation\venv\PySawit\photosyn.py", line 131, in __init__
+    SoilWater.__init__(self, fname_in)   # initialize the parent class first
+  File "C:\Users\Jirawat D\PycharmProjects\yield_estimation\venv\PySawit\soilwater.py", line 331, in __init__
+    Crop.__init__(self, fname_in)   # initialize the parent class first
+  File "C:\Users\Jirawat D\PycharmProjects\yield_estimation\venv\PySawit\crop.py", line 134, in __init__
+    Meteo.__init__(self, fname_in)   # initialize the parent class first
+  File "C:\Users\Jirawat D\PycharmProjects\yield_estimation\venv\PySawit\meteo.py", line 161, in __init__
+    self.annwthr = WeatherFile(self.weatherfilename)
+  File "C:\Users\Jirawat D\PycharmProjects\yield_estimation\venv\PySawit\weatherfile.py", line 144, in __init__
+    self.load(wthrfile)
+  File "C:\Users\Jirawat D\PycharmProjects\yield_estimation\venv\PySawit\weatherfile.py", line 259, in load
+    with open(wthrfile, 'rt') as fwthr:
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\Jirawat D\\PycharmProjects\\yield_estimation\\venv\\PySawit\\examples\\weather_file\\Sorod\\wt_sorod_adjust_nasa.txt'
